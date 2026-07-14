@@ -21,21 +21,21 @@ github/
 │   ├── data/                            # Raw price CSVs and reconciliation summaries
 │   ├── results/                         # Walk-forward trades, equity curves, and feature importance
 │   ├── python files/                    # Core pipeline and validation scripts
-│   └── RiaChawak_Research Propsal1.docx # Reference Word report
+│   └── Research Propsal 1 Report.docx # Reference Word report
 │
 ├── Research proposal 2/                 # LSTM vs. Classical Spread Pairs Trading
 │   ├── data/                            # Cointegrated prices, model predictions, and reconciliation
 │   ├── results/                         # Metrics summary and performance plots
 │   ├── python files/                    # Core deep learning and execution scripts
-│   └── Research Proposal 2_RiaC.docx    # Reference Word report
+│   └── Research Propsal 2 Report.docx    # Reference Word report
 │
 ├── Research proposal 3/                 # Contrarian perpetual futures funding rate Strategy
 │   ├── data/                            # Price history, daily funding rates, and reconciliation
 │   ├── results/                         # Metrics summary and event study statistics
 │   ├── python files/                    # Event studies and execution scripts
-│   └── Research Proposal3_RiaC.docx    # Reference Word report
+│   └── Research Propsal 3 Report.docx    # Reference Word report
 │
-├── Backtest_Verification_Report.docx    # Master comparison report (Custom vs. Standard Results)
+├── Verification Report.docx    # Master comparison report (Custom vs. Standard Results)
 └── README.md                            # Reproducibility documentation and mathematical specifications
 ```
 
