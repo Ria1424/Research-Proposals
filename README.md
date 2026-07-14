@@ -68,44 +68,6 @@ To replicate the reconciliation results and verify the mathematical equivalence 
 
 ---
 
-## ⚖️ Transaction Costs and Callable Commission Wrappers
-
-To run standard `backtesting.py` with transaction costs without triggering cash-check failures, we must bypass a known bug in its default float commission handler. 
-
-When a float (e.g. `0.0015`) is passed to the `Backtest` constructor:
-$$\text{adjusted\_price\_plus\_commission} = \text{price} \times (1 + \text{order\_size} \times \text{commission\_relative})$$
-This incorrectly adds the **total order commission** to the **unit price**, multiplying execution costs by the order size and causing immediate cash exhaustion.
-
-To resolve this, all our verification scripts pass a **callable lambda function** for `commission`, which returns the commission **per unit**:
-```python
-commission = lambda size, price: price * commission_ratio
-```
-This forces `backtesting.py` to evaluate commissions on a per-unit basis, permitting direct, fee-inclusive reconciliation:
-* **Proposal 1**: 0.04% taker fee + 0.05% slippage = **0.09% one-way cost**.
-* **Proposal 2**: 0.10% fee + 0.05% slippage = **0.15% one-way cost**.
-* **Proposal 3**: Run fee-free for reconciliation (0.0% cost) because the custom perpetual simulator closes and reopens the entire position daily (paying full transaction fees daily), whereas standard libraries only pay fees on the daily rebalanced difference.
-
----
-
-## 📈 Deflated Sharpe Ratio (DSR)
-
-As requested, we have incorporated the **Deflated Sharpe Ratio (DSR)** (Bailey and López de Prado, 2014) to adjust for multiple testing selection bias and non-normally distributed returns.
-
-The DSR is calculated as the Probabilistic Sharpe Ratio (PSR) evaluated against the expected maximum Sharpe ratio among the $N$ tested trials ($\widehat{SR}^*$):
-
-$$DSR = \widehat{PSR}(\widehat{SR}^*) = Z \left[ \frac{(\widehat{SR} - \widehat{SR}^*) \sqrt{n-1}}{\sqrt{1 - \widehat{\gamma}_3 \widehat{SR} + \frac{\widehat{\gamma}_4 - 1}{4} \widehat{SR}^2}} \right]$$
-
-Where:
-* $Z$ is the cumulative distribution function (CDF) of the standard normal distribution.
-* $\widehat{SR}$ is the observed daily Sharpe ratio.
-* $n$ is the track record length in days.
-* $\widehat{\gamma}_3$ and $\widehat{\gamma}_4$ are the skewness and kurtosis of the daily returns.
-* $\widehat{SR}^*$ is the Expected Maximum Sharpe Ratio benchmark under the null hypothesis (calculated based on the number of trials $N$):
-  $$\widehat{SR}^* = \text{std}(\widehat{SR}) \times \left( (1 - \gamma_e) Z^{-1}(1 - \frac{1}{N}) + \gamma_e Z^{-1}(1 - \frac{1}{N \cdot e}) \right)$$
-  (where $\gamma_e \approx 0.5772$ is the Euler-Mascheroni constant).
-
----
-
 ## 📊 Summary of Reconciliation Verdicts
 
 | Research Proposal | Strategy / Asset | Equity Correlation | Reconciliation Status |
