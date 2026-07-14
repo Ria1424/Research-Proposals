@@ -1,0 +1,14 @@
+Metric,LightGBM (net),MA Crossover (net),Buy & Hold
+CAGR (Gross),-21.4%,-25.3%,-5.5%
+CAGR (Net),-20.0%,-28.4%,-11.7%
+Cost Drag (CAGR),-1.5%,3.1%,6.3%
+Annualized Volatility,67.1%,72.4%,72.4%
+Sharpe (Gross),-0.10,-0.11,0.21
+Sharpe (Net),-0.07,-0.17,0.12
+Sortino (Net),-0.09,-0.23,0.17
+Calmar (Net),-0.24,-0.32,-0.15
+Max Drawdown (Net),-83.4%,-87.6%,-80.0%
+Win Rate,49.9%,40.0%,0.0%
+Profit Factor,0.85,1.01,0.00
+Number of Trades,527,10,1
+Turnover (trades/yr),118.7,2.3,0.2
