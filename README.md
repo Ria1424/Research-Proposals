@@ -1,4 +1,4 @@
-# Quantitative Backtesting Engines Cross-Verification & Reconciliation Repository
+# Research Proposals
 
 This repository contains the code, raw datasets, walk-forward results, and research reports for three cryptocurrency quantitative trading strategies. The core engineering objective of this work is the cross-verification and mathematical reconciliation of a **Custom Event-Driven Vector Backtesting Engine** against an industry-accepted event-driven framework (**`backtesting.py`** in Python).
 
