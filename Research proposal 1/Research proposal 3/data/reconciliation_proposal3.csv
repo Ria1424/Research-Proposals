@@ -1,0 +1,8 @@
+Asset,Metric,Custom Engine,Standard Engine,Difference
+BTC,Annualized CAGR,5.00%,5.00%,0.000%
+BTC,Annualized Volatility,11.93%,11.93%,0.001%
+BTC,Sharpe Ratio,0.050,0.050,0.0000
+BTC,Deflated Sharpe Ratio,0.2326,0.2326,0.0000
+BTC,Max Drawdown,-16.08%,-16.07%,-0.001%
+BTC,Trade Count,487,485,2
+BTC,Equity Correlation,1.00000,1.00000,0.00000
