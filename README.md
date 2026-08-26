@@ -15,7 +15,6 @@ To ensure direct mathematical equivalence and isolate execution differences, bot
 Each research proposal folder is cleanly structured into subfolders for `data`, `results`, and `python files`, along with its respective research report document:
 
 ```
-github/
 │
 ├── Research proposal 1/                  # ML Classifier (LightGBM) on Perpetual Futures
 │   ├── data/                             # Raw price CSVs and reconciliation summaries (incl. reconciliation_proposal1_v2.csv)
@@ -50,13 +49,10 @@ github/
 │   ├── Research Proposal 3 Report.docx   # Original single-column detailed report
 │   └── Research Proposal 3 Report_v2.docx # Reconciled Detailed Report (v2) - formatting preserved, values updated
 │
-├── Backtest_Verification_Report.docx     # Master comparison report (original)
+├── Verification_Report.docx              # Master comparison report (v1/ old)
 ├── Verification_Report_v2.docx           # Master Comparison Report (v2)
-├── generate_reports_v2.py                # Automated generator script for Word reports
-├── update_all_reports_v2.py              # Modifies only results tables inside original copied Word reports
 ├── metrics_v2.py                         # Centralized quantitative metrics library
 ├── pyproject.toml                        # Global poetry workspace configuration
-├── poetry.lock                           # Global locked dependency tree
 └── README.md                             # Reproducibility documentation and mathematical specifications
 ```
 
