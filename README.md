@@ -15,7 +15,7 @@ To ensure direct mathematical equivalence and isolate execution differences, bot
 Each research proposal folder is cleanly structured into subfolders for `data`, `results`, and `python files`, along with its respective research report document:
 
 ```
-│
+│ GITHIB REPO- Research Proposals
 ├── Research proposal 1/                  # ML Classifier (LightGBM) on Perpetual Futures
 │   ├── data/                             # Raw price CSVs and reconciliation summaries (incl. reconciliation_proposal1_v2.csv)
 │   ├── results/                          # Walk-forward trades, equity curves, and performance plots
