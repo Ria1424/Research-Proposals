@@ -1,0 +1,22 @@
+Strategy,Metric,Custom Engine,Standard Engine,NautilusTrader
+Classical Pairs Trading,Annualized CAGR,-12.05%,-6.52%,-6.77%
+Classical Pairs Trading,Annualized Volatility,18.66%,11.24%,23.61%
+Classical Pairs Trading,Sharpe Ratio,-0.646,-0.580,-0.287
+Classical Pairs Trading,Deflated Sharpe Ratio,0.0001,0.0002,0.0021
+Classical Pairs Trading,Max Drawdown,-43.36%,-24.78%,-29.13%
+Classical Pairs Trading,Trade Count,130,33,33
+Classical Pairs Trading,Equity Correlation (Naut),1.00000,0.88716,0.77516
+LSTM Pairs (Raw),Annualized CAGR,-26.55%,-10.61%,-13.17%
+LSTM Pairs (Raw),Annualized Volatility,36.45%,18.14%,274.93%
+LSTM Pairs (Raw),Sharpe Ratio,-0.729,-0.585,-0.048
+LSTM Pairs (Raw),Deflated Sharpe Ratio,0.0001,0.0002,0.3884
+LSTM Pairs (Raw),Max Drawdown,-74.12%,-37.57%,-77.89%
+LSTM Pairs (Raw),Trade Count,112,57,57
+LSTM Pairs (Raw),Equity Correlation (Naut),1.00000,0.90930,0.65968
+LSTM Pairs (Thresh=0.02),Annualized CAGR,-25.71%,-12.03%,-8.82%
+LSTM Pairs (Thresh=0.02),Annualized Volatility,32.32%,17.42%,220.18%
+LSTM Pairs (Thresh=0.02),Sharpe Ratio,-0.796,-0.690,-0.040
+LSTM Pairs (Thresh=0.02),Deflated Sharpe Ratio,0.0000,0.0001,0.2811
+LSTM Pairs (Thresh=0.02),Max Drawdown,-73.09%,-38.84%,-74.23%
+LSTM Pairs (Thresh=0.02),Trade Count,204,59,59
+LSTM Pairs (Thresh=0.02),Equity Correlation (Naut),1.00000,0.92056,0.57482
