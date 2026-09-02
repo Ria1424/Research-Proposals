@@ -1,0 +1,13 @@
+Asset,Metric,Custom Engine,Standard Engine,NautilusTrader
+BTC,CAGR,-24.85%,-7.86%,-26.79%
+BTC,Volatility,15.96%,11.32%,1057.19%
+BTC,Sharpe,-1.557,-0.694,-0.025
+BTC,Deflated Sharpe,0.0000,0.0000,1.0000
+BTC,Max Drawdown,-77.18%,-39.08%,-95.50%
+BTC,Trade Count,461,175,N/A
+ETH,CAGR,-5.62%,-9.86%,-6.21%
+ETH,Volatility,21.46%,25.81%,1141.82%
+ETH,Sharpe,-0.262,-0.382,-0.005
+ETH,Deflated Sharpe,0.0020,0.0009,1.0000
+ETH,Max Drawdown,-41.05%,-51.72%,-89.92%
+ETH,Trade Count,522,520,N/A
