@@ -1,0 +1,8 @@
+Asset,Metric,Custom Engine,Standard Engine,NautilusTrader
+BTC,Annualized CAGR,0.11%,3.53%,-4.86%
+BTC,Annualized Volatility,13.98%,7.61%,402.75%
+BTC,Sharpe Ratio,0.008,0.464,-0.012
+BTC,Deflated Sharpe Ratio,0.0097,0.1008,0.9858
+BTC,Max Drawdown,-29.19%,-8.90%,-68.38%
+BTC,Trade Count,203,105,N/A
+BTC,Equity Correlation (Naut),1.00000,0.57775,0.21830
