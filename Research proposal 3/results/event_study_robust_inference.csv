@@ -1,4 +1,0 @@
-Horizon,Mean Return,Naive t,Non-overlapping t,HAC t,Block Bootstrap p
-1 day,+0.67%,t=2.87 (p=0.0023),t=2.87 (n=214),t=3.49 (p=0.0005),0.004
-3 days,+1.14%,t=3.14 (p=0.0009),t=3.29 (n=120),t=2.67 (p=0.0076),0.005
-7 days,+2.62%,t=4.55 (p=0.0000),t=3.32 (n=77),t=3.00 (p=0.0027),0.000
